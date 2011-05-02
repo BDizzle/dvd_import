@@ -45,10 +45,8 @@ namespace Utilities.DVDImport
 		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.Button button6;
@@ -116,495 +114,474 @@ namespace Utilities.DVDImport
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.progressBar1 = new System.Windows.Forms.ProgressBar();
-			this.label2 = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.uxAVSyncValue = new System.Windows.Forms.Label();
-			this.uxAVSync = new System.Windows.Forms.TrackBar();
-			this.label12 = new System.Windows.Forms.Label();
-			this.checkBox2 = new System.Windows.Forms.CheckBox();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.trackBar1 = new System.Windows.Forms.TrackBar();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.label9 = new System.Windows.Forms.Label();
-			this.button5 = new System.Windows.Forms.Button();
-			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.button6 = new System.Windows.Forms.Button();
-			this.label3 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.volumeLabel = new System.Windows.Forms.Label();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-			this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.treeView1 = new System.Windows.Forms.TreeView();
-			this.button7 = new System.Windows.Forms.Button();
-			this.label11 = new System.Windows.Forms.Label();
-			this.groupBox1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-			this.groupBox2.SuspendLayout();
-			this.tabControl1.SuspendLayout();
-			this.tabPage1.SuspendLayout();
-			this.tabPage2.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(16, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(40, 16);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Folder:";
-			// 
-			// textBox1
-			// 
-			this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.textBox1.Location = new System.Drawing.Point(56, 16);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(360, 20);
-			this.textBox1.TabIndex = 1;
-			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-			// 
-			// button1
-			// 
-			this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.button1.Location = new System.Drawing.Point(424, 16);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(24, 23);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "...";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button2.Enabled = false;
-			this.button2.Location = new System.Drawing.Point(704, 285);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(48, 23);
-			this.button2.TabIndex = 7;
-			this.button2.Text = "Import";
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// progressBar1
-			// 
-			this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.progressBar1.Location = new System.Drawing.Point(0, 311);
-			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(760, 7);
-			this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.progressBar1.TabIndex = 4;
-			this.progressBar1.Visible = false;
-			// 
-			// label2
-			// 
-			this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(-1, 292);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(466, 15);
-			this.label2.TabIndex = 5;
-			// 
-			// panel1
-			// 
-			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.Location = new System.Drawing.Point(8, 16);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(248, 222);
-			this.panel1.TabIndex = 6;
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.uxAVSyncValue);
-			this.groupBox1.Controls.Add(this.uxAVSync);
-			this.groupBox1.Controls.Add(this.label12);
-			this.groupBox1.Controls.Add(this.checkBox2);
-			this.groupBox1.Controls.Add(this.checkBox1);
-			this.groupBox1.Controls.Add(this.label7);
-			this.groupBox1.Controls.Add(this.label8);
-			this.groupBox1.Controls.Add(this.trackBar1);
-			this.groupBox1.Location = new System.Drawing.Point(313, 96);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(159, 115);
-			this.groupBox1.TabIndex = 25;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Audio Processing";
-			// 
-			// uxAVSyncValue
-			// 
-			this.uxAVSyncValue.Location = new System.Drawing.Point(2, 132);
-			this.uxAVSyncValue.Name = "uxAVSyncValue";
-			this.uxAVSyncValue.Size = new System.Drawing.Size(51, 19);
-			this.uxAVSyncValue.TabIndex = 31;
-			this.uxAVSyncValue.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			this.uxAVSyncValue.Visible = false;
-			// 
-			// uxAVSync
-			// 
-			this.uxAVSync.LargeChange = 132;
-			this.uxAVSync.Location = new System.Drawing.Point(51, 108);
-			this.uxAVSync.Maximum = 990;
-			this.uxAVSync.Minimum = -990;
-			this.uxAVSync.Name = "uxAVSync";
-			this.uxAVSync.Size = new System.Drawing.Size(104, 42);
-			this.uxAVSync.SmallChange = 33;
-			this.uxAVSync.TabIndex = 30;
-			this.uxAVSync.TickFrequency = 330;
-			this.uxAVSync.Visible = false;
-			this.uxAVSync.Scroll += new System.EventHandler(this.uxAVSync_Scroll);
-			// 
-			// label12
-			// 
-			this.label12.Location = new System.Drawing.Point(6, 114);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(39, 19);
-			this.label12.TabIndex = 29;
-			this.label12.Text = "Sync:";
-			this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			this.label12.Visible = false;
-			// 
-			// checkBox2
-			// 
-			this.checkBox2.AutoSize = true;
-			this.checkBox2.Location = new System.Drawing.Point(9, 88);
-			this.checkBox2.Name = "checkBox2";
-			this.checkBox2.Size = new System.Drawing.Size(130, 17);
-			this.checkBox2.TabIndex = 3;
-			this.checkBox2.Text = "Dynamic Compression";
-			this.checkBox2.UseVisualStyleBackColor = true;
-			// 
-			// checkBox1
-			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Location = new System.Drawing.Point(8, 65);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(72, 17);
-			this.checkBox1.TabIndex = 2;
-			this.checkBox1.Text = "Normalize";
-			this.checkBox1.UseVisualStyleBackColor = true;
-			this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-			// 
-			// label7
-			// 
-			this.label7.Location = new System.Drawing.Point(6, 16);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(39, 19);
-			this.label7.TabIndex = 23;
-			this.label7.Text = "Level:";
-			this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// label8
-			// 
-			this.label8.Location = new System.Drawing.Point(6, 39);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(39, 19);
-			this.label8.TabIndex = 24;
-			this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// trackBar1
-			// 
-			this.trackBar1.Location = new System.Drawing.Point(51, 16);
-			this.trackBar1.Maximum = 20;
-			this.trackBar1.Minimum = -20;
-			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(104, 42);
-			this.trackBar1.TabIndex = 1;
-			this.trackBar1.TickFrequency = 5;
-			this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
-			// 
-			// button3
-			// 
-			this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-			this.button3.Location = new System.Drawing.Point(160, 247);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(32, 23);
-			this.button3.TabIndex = 0;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
-			// 
-			// button4
-			// 
-			this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-			this.button4.Location = new System.Drawing.Point(192, 247);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(32, 23);
-			this.button4.TabIndex = 1;
-			this.button4.Click += new System.EventHandler(this.button4_Click);
-			// 
-			// groupBox2
-			// 
-			this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)
-						| System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox2.Controls.Add(this.panel1);
-			this.groupBox2.Controls.Add(this.label10);
-			this.groupBox2.Controls.Add(this.label9);
-			this.groupBox2.Controls.Add(this.button3);
-			this.groupBox2.Controls.Add(this.button4);
-			this.groupBox2.Controls.Add(this.button5);
-			this.groupBox2.Enabled = false;
-			this.groupBox2.Location = new System.Drawing.Point(488, 8);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(264, 271);
-			this.groupBox2.TabIndex = 11;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Preview";
-			// 
-			// label10
-			// 
-			this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(7, 252);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(74, 13);
-			this.label10.TabIndex = 3;
-			this.label10.Text = "affect preview";
-			this.label10.Visible = false;
-			// 
-			// label9
-			// 
-			this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.label9.AutoSize = true;
-			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label9.Location = new System.Drawing.Point(7, 237);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(133, 13);
-			this.label9.TabIndex = 9;
-			this.label9.Text = "Audio Processing does not";
-			this.label9.Visible = false;
-			// 
-			// button5
-			// 
-			this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-			this.button5.Location = new System.Drawing.Point(224, 247);
-			this.button5.Name = "button5";
-			this.button5.Size = new System.Drawing.Size(32, 23);
-			this.button5.TabIndex = 2;
-			this.button5.Click += new System.EventHandler(this.button5_Click);
-			// 
-			// tabControl1
-			// 
-			this.tabControl1.Controls.Add(this.tabPage1);
-			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Location = new System.Drawing.Point(8, 8);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(464, 80);
-			this.tabControl1.TabIndex = 0;
-			this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
-			// 
-			// tabPage1
-			// 
-			this.tabPage1.Controls.Add(this.button6);
-			this.tabPage1.Controls.Add(this.label3);
-			this.tabPage1.Controls.Add(this.comboBox1);
-			this.tabPage1.Controls.Add(this.volumeLabel);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Size = new System.Drawing.Size(456, 54);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "DVD";
-			// 
-			// button6
-			// 
-			this.button6.Location = new System.Drawing.Point(384, 16);
-			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(64, 23);
-			this.button6.TabIndex = 1;
-			this.button6.Text = "Refresh";
-			this.button6.Visible = false;
-			this.button6.Click += new System.EventHandler(this.button6_Click);
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(8, 16);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(40, 16);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "Drive:";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.Location = new System.Drawing.Point(56, 16);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(64, 21);
-			this.comboBox1.TabIndex = 0;
-			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-			// 
-			// volumeLabel
-			// 
-			this.volumeLabel.Location = new System.Drawing.Point(120, 16);
-			this.volumeLabel.Name = "volumeLabel";
-			this.volumeLabel.Size = new System.Drawing.Size(328, 16);
-			this.volumeLabel.TabIndex = 13;
-			// 
-			// tabPage2
-			// 
-			this.tabPage2.Controls.Add(this.label1);
-			this.tabPage2.Controls.Add(this.button1);
-			this.tabPage2.Controls.Add(this.textBox1);
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Size = new System.Drawing.Size(456, 54);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "VOB File";
-			// 
-			// saveFileDialog1
-			// 
-			this.saveFileDialog1.DefaultExt = "mpg";
-			this.saveFileDialog1.Filter = "MPEG Files|*.mpg";
-			this.saveFileDialog1.OverwritePrompt = false;
-			// 
-			// textBox2
-			// 
-			this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox2.Location = new System.Drawing.Point(75, 229);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(64, 20);
-			this.textBox2.TabIndex = 3;
-			this.textBox2.Text = "1";
-			// 
-			// textBox3
-			// 
-			this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox3.Location = new System.Drawing.Point(75, 261);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(392, 20);
-			this.textBox3.TabIndex = 5;
-			// 
-			// label4
-			// 
-			this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.label4.Location = new System.Drawing.Point(19, 229);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(48, 23);
-			this.label4.TabIndex = 16;
-			this.label4.Text = "ShowID:";
-			// 
-			// label5
-			// 
-			this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.label5.Location = new System.Drawing.Point(19, 261);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(48, 23);
-			this.label5.TabIndex = 17;
-			this.label5.Text = "Name:";
-			// 
-			// label6
-			// 
-			this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.label6.Location = new System.Drawing.Point(155, 229);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(40, 23);
-			this.label6.TabIndex = 19;
-			this.label6.Text = "Reel #:";
-			// 
-			// textBox4
-			// 
-			this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.textBox4.Location = new System.Drawing.Point(203, 229);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(64, 20);
-			this.textBox4.TabIndex = 4;
-			this.textBox4.Text = "1";
-			// 
-			// treeView1
-			// 
-			this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-						| System.Windows.Forms.AnchorStyles.Left)));
-			this.treeView1.FullRowSelect = true;
-			this.treeView1.HideSelection = false;
-			this.treeView1.Location = new System.Drawing.Point(16, 96);
-			this.treeView1.Name = "treeView1";
-			this.treeView1.ShowPlusMinus = false;
-			this.treeView1.ShowRootLines = false;
-			this.treeView1.Size = new System.Drawing.Size(456, 127);
-			this.treeView1.TabIndex = 2;
-			this.treeView1.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeCollapse);
-			this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-			// 
-			// button7
-			// 
-			this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.button7.Location = new System.Drawing.Point(623, 285);
-			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(75, 23);
-			this.button7.TabIndex = 6;
-			this.button7.Text = "Options...";
-			this.button7.UseVisualStyleBackColor = true;
-			this.button7.Click += new System.EventHandler(this.button7_Click);
-			// 
-			// label11
-			// 
-			this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-			this.label11.Location = new System.Drawing.Point(471, 293);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(146, 15);
-			this.label11.TabIndex = 26;
-			this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(760, 320);
-			this.Controls.Add(this.label11);
-			this.Controls.Add(this.groupBox1);
-			this.Controls.Add(this.button7);
-			this.Controls.Add(this.treeView1);
-			this.Controls.Add(this.label6);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.label5);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.tabControl1);
-			this.Controls.Add(this.groupBox2);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.progressBar1);
-			this.Controls.Add(this.button2);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.MinimumSize = new System.Drawing.Size(768, 344);
-			this.Name = "Form1";
-			this.Text = "DVD Import";
-			this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
-			this.Load += new System.EventHandler(this.Form1_Load);
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
-			this.tabControl1.ResumeLayout(false);
-			this.tabPage1.ResumeLayout(false);
-			this.tabPage2.ResumeLayout(false);
-			this.tabPage2.PerformLayout();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.uxAVSyncValue = new System.Windows.Forms.Label();
+            this.uxAVSync = new System.Windows.Forms.TrackBar();
+            this.label12 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.volumeLabel = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(16, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Folder:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(56, 16);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(360, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(424, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(24, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "...";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(704, 285);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Import";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar1.Location = new System.Drawing.Point(0, 311);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(760, 7);
+            this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBar1.TabIndex = 4;
+            this.progressBar1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(-1, 292);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(466, 15);
+            this.label2.TabIndex = 5;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(8, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(248, 222);
+            this.panel1.TabIndex = 6;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.uxAVSyncValue);
+            this.groupBox1.Controls.Add(this.uxAVSync);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.trackBar1);
+            this.groupBox1.Location = new System.Drawing.Point(313, 96);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(159, 115);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Audio Processing";
+            // 
+            // uxAVSyncValue
+            // 
+            this.uxAVSyncValue.Location = new System.Drawing.Point(2, 132);
+            this.uxAVSyncValue.Name = "uxAVSyncValue";
+            this.uxAVSyncValue.Size = new System.Drawing.Size(51, 19);
+            this.uxAVSyncValue.TabIndex = 31;
+            this.uxAVSyncValue.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.uxAVSyncValue.Visible = false;
+            // 
+            // uxAVSync
+            // 
+            this.uxAVSync.LargeChange = 132;
+            this.uxAVSync.Location = new System.Drawing.Point(51, 108);
+            this.uxAVSync.Maximum = 990;
+            this.uxAVSync.Minimum = -990;
+            this.uxAVSync.Name = "uxAVSync";
+            this.uxAVSync.Size = new System.Drawing.Size(104, 45);
+            this.uxAVSync.SmallChange = 33;
+            this.uxAVSync.TabIndex = 30;
+            this.uxAVSync.TickFrequency = 330;
+            this.uxAVSync.Visible = false;
+            this.uxAVSync.Scroll += new System.EventHandler(this.uxAVSync_Scroll);
+            // 
+            // label12
+            // 
+            this.label12.Location = new System.Drawing.Point(6, 114);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(39, 19);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Sync:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label12.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(9, 88);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(130, 17);
+            this.checkBox2.TabIndex = 3;
+            this.checkBox2.Text = "Dynamic Compression";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(8, 65);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(72, 17);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "Normalize";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(6, 16);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 19);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Level:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(6, 39);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 19);
+            this.label8.TabIndex = 24;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(51, 16);
+            this.trackBar1.Maximum = 20;
+            this.trackBar1.Minimum = -20;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(104, 45);
+            this.trackBar1.TabIndex = 1;
+            this.trackBar1.TickFrequency = 5;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(160, 247);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(32, 23);
+            this.button3.TabIndex = 0;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(192, 247);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(32, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.panel1);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button4);
+            this.groupBox2.Controls.Add(this.button5);
+            this.groupBox2.Enabled = false;
+            this.groupBox2.Location = new System.Drawing.Point(488, 8);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(264, 271);
+            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Preview";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 252);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(74, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "affect preview";
+            this.label10.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(7, 237);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(133, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Audio Processing does not";
+            this.label9.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(224, 247);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(32, 23);
+            this.button5.TabIndex = 2;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(8, 8);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(464, 80);
+            this.tabControl1.TabIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.button6);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.volumeLabel);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Size = new System.Drawing.Size(456, 54);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "DVD";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(384, 16);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(64, 23);
+            this.button6.TabIndex = 1;
+            this.button6.Text = "Refresh";
+            this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(8, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Drive:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Location = new System.Drawing.Point(56, 16);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(64, 21);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // volumeLabel
+            // 
+            this.volumeLabel.Location = new System.Drawing.Point(120, 16);
+            this.volumeLabel.Name = "volumeLabel";
+            this.volumeLabel.Size = new System.Drawing.Size(328, 16);
+            this.volumeLabel.TabIndex = 13;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(456, 54);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "VOB File";
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.DefaultExt = "mpg";
+            this.saveFileDialog1.Filter = "MPEG Files|*.mpg";
+            this.saveFileDialog1.OverwritePrompt = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox2.Location = new System.Drawing.Point(75, 229);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(64, 20);
+            this.textBox2.TabIndex = 3;
+            this.textBox2.Text = "1";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.Location = new System.Drawing.Point(19, 229);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 23);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "ShowID:";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.Location = new System.Drawing.Point(155, 229);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 23);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Reel #:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox4.Location = new System.Drawing.Point(203, 229);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(64, 20);
+            this.textBox4.TabIndex = 4;
+            this.textBox4.Text = "1";
+            // 
+            // treeView1
+            // 
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeView1.FullRowSelect = true;
+            this.treeView1.HideSelection = false;
+            this.treeView1.Location = new System.Drawing.Point(16, 96);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.ShowPlusMinus = false;
+            this.treeView1.ShowRootLines = false;
+            this.treeView1.Size = new System.Drawing.Size(456, 127);
+            this.treeView1.TabIndex = 2;
+            this.treeView1.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeCollapse);
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.Location = new System.Drawing.Point(623, 285);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Options...";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.Location = new System.Drawing.Point(471, 293);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(146, 15);
+            this.label11.TabIndex = 26;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.ClientSize = new System.Drawing.Size(760, 320);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.treeView1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.button2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(768, 344);
+            this.Name = "Form1";
+            this.Text = "DVD Import";
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		#endregion
@@ -931,7 +908,6 @@ namespace Utilities.DVDImport
 				tabControl1.Enabled = false;
 				button7.Enabled = false;
 				textBox2.Enabled = false;
-				textBox3.Enabled = false;
 				textBox4.Enabled = false;
 			}
 		}
@@ -971,7 +947,6 @@ namespace Utilities.DVDImport
 				tabControl1.Enabled = true;
 				button7.Enabled = true;
 				textBox2.Enabled = true;
-				textBox3.Enabled = true;
 				textBox4.Enabled = true;
 				uxAVSync.Value = 0;
 				uxAVSync_Scroll(this, null);
@@ -1021,48 +996,10 @@ namespace Utilities.DVDImport
 
 				//string outputDir = "";
 				#region Choose a file, default to last directory used
-				string saveFile = "";
-				saveFileDialog1.FileName = textBox2.Text + "-" + textBox4.Text + "-" + textBox3.Text + ".mpg";
-				saveFileDialog1.FileName = new Utilities().MakeSafeFilename(saveFileDialog1.FileName);
 
-				RegistryKey rk = Registry.LocalMachine.OpenSubKey(REGISTRY_KEY);
-				if (rk != null)
-				{
-					string initialDir = rk.GetValue("DefaultDirectory").ToString();
-					if (initialDir != null && Directory.Exists(initialDir))
-						saveFileDialog1.InitialDirectory = initialDir;
-				}
-				DialogResult dr = saveFileDialog1.ShowDialog();
-				if (dr == DialogResult.OK && File.Exists(saveFileDialog1.FileName))
-				{
-					dr = DialogResult.Cancel;
-					// ask about overwriting
-					if (MessageBox.Show(saveFileDialog1.FileName + " already exists.\nDo you want to replace it?", "Save As", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-					{
-						dr = DialogResult.OK;
-						File.Delete(saveFileDialog1.FileName);
-					}
-				}
-				if (dr == DialogResult.OK)
-				{
-					saveFile = saveFileDialog1.FileName;
-					FileInfo fi = new FileInfo(saveFile);
-					try
-					{
-						RegistryKey saveKey = Registry.LocalMachine.CreateSubKey(REGISTRY_KEY);
-						saveKey.SetValue("DefaultDirectory", fi.Directory.FullName);
-						//outputDir = fi.Directory.FullName;
-					}
-					catch { }
-				}
-				else
-				{
-					SetProgress(0);
-					SetStatusText("");
-					EnableForm();
-					thread = null;
-					return;
-				}
+                var fileName = String.Format("{0}-{1}{2}.mpg", textBox2.Text, textBox4.Text, Settings.Default.Suffix);
+                var path = Path.Combine(Settings.Default.OutputDirectory, fileName);
+
 				#endregion
 
 				int audioOffset = 0;
@@ -1341,7 +1278,7 @@ namespace Utilities.DVDImport
 				// -o <file> = output to final output
 				process.StartInfo.Arguments = String.Format("-f 3 -V -v 2 -O {0} -S 0 -o \"{1}\" \"{2}\" \"{3}\"",
 					AVOffset,
-					saveFile,
+					path,
 					TempPath + video,
 					audio);
 				process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
@@ -2155,7 +2092,6 @@ namespace Utilities.DVDImport
 				button3.Enabled = false;
 				button4.Enabled = false;
 				button5.Enabled = false;
-				textBox3.Text = "";
 			}
 			else
 			{
@@ -2179,10 +2115,6 @@ namespace Utilities.DVDImport
 					int idx = val.IndexOfAny(":.".ToCharArray());
 					if (idx != -1)
 						val = val.Substring(0, idx);
-					textBox3.Text = "";
-					if (tabControl1.SelectedIndex == 0)
-						textBox3.Text = volumeLabel.Text + ", ";
-					textBox3.Text += val;
 				}
 				else
 				{
@@ -2199,10 +2131,6 @@ namespace Utilities.DVDImport
 					if (idx != -1)
 						val = val.Substring(0, idx);
 					val = val.Replace("PGC", "Program");
-					textBox3.Text = "";
-					if (tabControl1.SelectedIndex == 0)
-						textBox3.Text = volumeLabel.Text + ", ";
-					textBox3.Text += val;
 				}
 			}
 

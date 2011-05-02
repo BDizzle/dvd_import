@@ -118,5 +118,29 @@ namespace Utilities.DVDImport {
                 this["ShowSync"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(".dvdimport")]
+        public string Suffix {
+            get {
+                return ((string)(this["Suffix"]));
+            }
+            set {
+                this["Suffix"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Imports")]
+        public string OutputDirectory {
+            get {
+                return ((string)(this["OutputDirectory"]));
+            }
+            set {
+                this["OutputDirectory"] = value;
+            }
+        }
     }
 }

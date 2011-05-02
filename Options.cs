@@ -91,6 +91,9 @@ namespace Utilities.DVDImport
 			}
 			linkLabel1.Text = tempPath;
 			UpdateFreeSpace();
+
+            uxSuffix.DataBindings.Add("Text", Settings.Default, "Suffix");
+            uxOutput.DataBindings.Add("Text", Settings.Default, "OutputDirectory");
 		}
 
 		private void UpdateFreeSpace()
