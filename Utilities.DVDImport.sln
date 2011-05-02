@@ -1,8 +1,8 @@
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.DVDImport", "Utilities.DVDImport.csproj", "{F25E5154-30D2-4CF2-993C-4742ED603897}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSUtils", "DSUtils\DSUtils.vcproj", "{EA2D3DAF-AEBD-4296-9038-985281F9B8ED}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DSUtils", "DSUtils\DSUtils.vcxproj", "{EA2D3DAF-AEBD-4296-9038-985281F9B8ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
