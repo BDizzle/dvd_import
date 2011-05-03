@@ -31,19 +31,14 @@ namespace Utilities.DVDImport
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.ProgressBar progressBar1;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button4;
-		private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label volumeLabel;
-		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
-		private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label4;
@@ -51,7 +46,6 @@ namespace Utilities.DVDImport
 		private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.Button button6;
 		private TreeView treeView1;
-		private DSUtils m_ds = null;
 		private Button button7;
 		private TrackBar trackBar1;
 		private Label label7;
@@ -59,9 +53,7 @@ namespace Utilities.DVDImport
 		private GroupBox groupBox1;
 		private CheckBox checkBox2;
 		private CheckBox checkBox1;
-		private Process process = null;
-		private Label label9;
-		private Label label10;
+        private Process process = null;
 		volatile private bool m_run = true;
 		private DateTime m_startTime = DateTime.MinValue;
 		private Label label11;
@@ -121,7 +113,6 @@ namespace Utilities.DVDImport
             this.button2 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.uxAVSyncValue = new System.Windows.Forms.Label();
             this.uxAVSync = new System.Windows.Forms.TrackBar();
@@ -131,12 +122,6 @@ namespace Utilities.DVDImport
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
@@ -156,7 +141,6 @@ namespace Utilities.DVDImport
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -194,7 +178,7 @@ namespace Utilities.DVDImport
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(704, 285);
+            this.button2.Location = new System.Drawing.Point(428, 277);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(48, 23);
             this.button2.TabIndex = 7;
@@ -204,7 +188,7 @@ namespace Utilities.DVDImport
             // progressBar1
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(0, 311);
+            this.progressBar1.Location = new System.Drawing.Point(-276, 303);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(760, 7);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -216,23 +200,15 @@ namespace Utilities.DVDImport
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(-1, 292);
+            this.label2.Location = new System.Drawing.Point(-1, 284);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(466, 15);
+            this.label2.Size = new System.Drawing.Size(190, 15);
             this.label2.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(8, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 222);
-            this.panel1.TabIndex = 6;
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.uxAVSyncValue);
             this.groupBox1.Controls.Add(this.uxAVSync);
             this.groupBox1.Controls.Add(this.label12);
@@ -243,7 +219,7 @@ namespace Utilities.DVDImport
             this.groupBox1.Controls.Add(this.trackBar1);
             this.groupBox1.Location = new System.Drawing.Point(313, 96);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(159, 115);
+            this.groupBox1.Size = new System.Drawing.Size(159, 86);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Audio Processing";
@@ -330,78 +306,6 @@ namespace Utilities.DVDImport
             this.trackBar1.TickFrequency = 5;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(160, 247);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(32, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(192, 247);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(32, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(488, 8);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(264, 271);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Preview";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 252);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "affect preview";
-            this.label10.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 237);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 13);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Audio Processing does not";
-            this.label9.Visible = false;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(224, 247);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(32, 23);
-            this.button5.TabIndex = 2;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -479,7 +383,7 @@ namespace Utilities.DVDImport
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox2.Location = new System.Drawing.Point(75, 229);
+            this.textBox2.Location = new System.Drawing.Point(75, 221);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(64, 20);
             this.textBox2.TabIndex = 3;
@@ -488,7 +392,7 @@ namespace Utilities.DVDImport
             // label4
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label4.Location = new System.Drawing.Point(19, 229);
+            this.label4.Location = new System.Drawing.Point(19, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 23);
             this.label4.TabIndex = 16;
@@ -497,7 +401,7 @@ namespace Utilities.DVDImport
             // label6
             // 
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label6.Location = new System.Drawing.Point(155, 229);
+            this.label6.Location = new System.Drawing.Point(155, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 23);
             this.label6.TabIndex = 19;
@@ -506,7 +410,7 @@ namespace Utilities.DVDImport
             // textBox4
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox4.Location = new System.Drawing.Point(203, 229);
+            this.textBox4.Location = new System.Drawing.Point(203, 221);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(64, 20);
             this.textBox4.TabIndex = 4;
@@ -514,15 +418,16 @@ namespace Utilities.DVDImport
             // 
             // treeView1
             // 
-            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.treeView1.FullRowSelect = true;
             this.treeView1.HideSelection = false;
             this.treeView1.Location = new System.Drawing.Point(16, 96);
             this.treeView1.Name = "treeView1";
             this.treeView1.ShowPlusMinus = false;
             this.treeView1.ShowRootLines = false;
-            this.treeView1.Size = new System.Drawing.Size(456, 127);
+            this.treeView1.Size = new System.Drawing.Size(291, 119);
             this.treeView1.TabIndex = 2;
             this.treeView1.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeCollapse);
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
@@ -530,7 +435,7 @@ namespace Utilities.DVDImport
             // button7
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.Location = new System.Drawing.Point(623, 285);
+            this.button7.Location = new System.Drawing.Point(347, 277);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 6;
@@ -541,7 +446,7 @@ namespace Utilities.DVDImport
             // label11
             // 
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.Location = new System.Drawing.Point(471, 293);
+            this.label11.Location = new System.Drawing.Point(195, 285);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(146, 15);
             this.label11.TabIndex = 26;
@@ -550,7 +455,7 @@ namespace Utilities.DVDImport
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(760, 320);
+            this.ClientSize = new System.Drawing.Size(484, 312);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button7);
@@ -560,22 +465,19 @@ namespace Utilities.DVDImport
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(768, 344);
+            this.MinimumSize = new System.Drawing.Size(500, 344);
             this.Name = "Form1";
-            this.Text = "DVD Import";
+            this.Text = "BEC-TV DVD Import";
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxAVSync)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
@@ -901,9 +803,7 @@ namespace Utilities.DVDImport
 				textBox1.Enabled = false;
 				button1.Enabled = false;
 				button2.Text = "Cancel";
-				button3.Enabled = false;
 				groupBox1.Enabled = false;
-				groupBox2.Enabled = false;
 				treeView1.Enabled = false;
 				tabControl1.Enabled = false;
 				button7.Enabled = false;
@@ -940,11 +840,8 @@ namespace Utilities.DVDImport
 				button1.Enabled = true;
 				button2.Text = "Import";
 				button2.Enabled = true;
-				button3.Enabled = true;
 				groupBox1.Enabled = true;
-				groupBox2.Enabled = true;
 				treeView1.Enabled = true;
-				tabControl1.Enabled = true;
 				button7.Enabled = true;
 				textBox2.Enabled = true;
 				textBox4.Enabled = true;
@@ -1675,9 +1572,6 @@ namespace Utilities.DVDImport
 
 		private void button2_Click(object sender, System.EventArgs e)
 		{
-			// stop preview if there is one
-			button4_Click(null, null);
-
 			if (thread == null)
 			{
 				if (treeView1.SelectedNode == null)
@@ -1699,9 +1593,6 @@ namespace Utilities.DVDImport
 
             try
             {
-                if (m_ds != null)
-                    m_ds.Stop();
-
                 if (thread != null)
                 {
                     thread.Abort();
@@ -1735,18 +1626,6 @@ namespace Utilities.DVDImport
 				Application.Exit();
 			}
 
-			// check cpu capabilities (mplex requires SSE2)
-			int eax, ebx, ecx, edx = 0;
-			if (CPUID.cpuid.CPUIDIsSupported() && CPUID.cpuid.Invoke(1, out eax, out ebx, out ecx, out edx))
-			{
-				if ((edx & CPUID.cpuid.CPU_FEATURE_SSE2_FLAG) == 0)
-				{
-					// no SSE2 instruction, error out
-					MessageBox.Show("Your system does not have the necessary processor capabilities to run this application.", "Processor Error", MessageBoxButtons.OK);
-					Application.Exit();
-				}
-			}
-
 			System.Version v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
 			string versionText = v.ToString(3) + " Build " + v.Revision;
 			this.Text += " " + versionText;
@@ -1761,10 +1640,6 @@ namespace Utilities.DVDImport
 			checkBox1.Checked = Settings.Default.Normalize;
 			checkBox2.Checked = Settings.Default.DynamicCompress;
 			SetupControls();
-
-			button3.Enabled = false;
-			button4.Enabled = false;
-			button5.Enabled = false;
 
 			comboBox1.Items.Clear();
 			string[] drives = Environment.GetLogicalDrives();
@@ -1837,9 +1712,6 @@ namespace Utilities.DVDImport
 			try
 			{
 				treeView1.Nodes.Clear();
-				button3.Enabled = false;
-				button4.Enabled = false;
-				button5.Enabled = false;
 				string path = "";
 				if (tabControl1.SelectedIndex == 0)
 				{
@@ -1938,146 +1810,6 @@ namespace Utilities.DVDImport
 			}
 		}
 
-		#region Video Playback
-		private Thread m_videoThread = null;
-		private void PlaybackProgress()
-		{
-            try
-            {
-                lock (this)
-                {
-                    if (m_ds == null)
-                        return;
-                }
-
-                while (true)
-                {
-                    lock (this)
-                    {
-                        if (m_ds.IsPlaying() == false)
-                            break;
-                    }
-                    Thread.Sleep(250);
-                }
-
-                lock (this)
-                {
-                    button3.Enabled = true;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-                    m_ds.Stop();
-                    label9.Visible = false;
-                    label10.Visible = false;
-                    m_ds = null;
-                    m_videoThread = null;
-                }
-            }
-            catch { }
-		}
-
-		private void button3_Click(object sender, System.EventArgs e)
-		{
-            try
-            {
-                lock (this)
-                {
-                    List<IFOParse.VOB> vobs = null;
-                    IFOParse.ProgramChain pgc = null;
-                    List<IFOParse.Cell> cells = null;
-                    if (treeView1.SelectedNode == null)
-                        return;
-                    if (treeView1.SelectedNode.Tag.GetType() == typeof(FileInfo))
-                    {
-                        // got single vob file
-                        FileInfo fi = (FileInfo)treeView1.SelectedNode.Tag;
-                        IFOParse.VOB v = new IFOParse.VOB(fi.FullName);
-                        vobs = new List<IFOParse.VOB>();
-                        vobs.Add(v);
-
-                        // create dummy cell list
-                        cells = new List<IFOParse.Cell>();
-                        IFOParse.Cell c = new IFOParse.Cell();
-                        c.FirstSector = 0;
-                        c.LastSector = (int)v.LastSector;
-                        cells.Add(c);
-                    }
-                    else if (treeView1.SelectedNode.Tag.GetType() == typeof(IFOParse.ProgramChain))
-                    {
-                        pgc = (IFOParse.ProgramChain)treeView1.SelectedNode.Tag;
-                        vobs = pgc.Title.VOBs;
-                        cells = pgc.Cells;
-                    }
-
-
-                    m_ds = new DSUtils();
-                    ArrayList ranges = new ArrayList();
-                    ArrayList vobNames = new ArrayList();
-                    for (int c = 0; c < cells.Count; c++)
-                    {
-                        ranges.Add(cells[c].FirstSector);
-                        ranges.Add(cells[c].LastSector);
-                    }
-                    for (int v = 0; v < vobs.Count; v++)
-                    {
-                        vobNames.Add(vobs[v].FileInfo.FullName);
-                        vobNames.Add(vobs[v].Sectors);
-                    }
-                    m_ds.Preview(ranges, vobNames, panel1.Handle, trackBar1.Value);
-                    button3.Enabled = false;
-                    button4.Enabled = true;
-                    button5.Enabled = true;
-                    if (Settings.Default.AudioMode)
-                    {
-                        label9.Visible = true;
-                        label10.Visible = true;
-                    }
-
-                    m_videoThread = new Thread(new ThreadStart(PlaybackProgress));
-                    m_videoThread.Start();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(String.Format("Error starting preview: {0}", ex.Message));
-            }
-		}
-
-		private void button4_Click(object sender, System.EventArgs e)
-		{
-            try
-            {
-                lock (this)
-                {
-
-                    if (m_ds == null)
-                        return;
-                    m_ds.Stop();
-                    label9.Visible = false;
-                    label10.Visible = false;
-                    button3.Enabled = true;
-                    button4.Enabled = false;
-                    button5.Enabled = false;
-
-                }
-            }
-            catch { }
-		}
-
-		private void button5_Click(object sender, System.EventArgs e)
-		{
-            try
-            {
-                lock (this)
-                {
-                    if (m_ds == null)
-                        return;
-                    m_ds.Pause();
-                }
-            }
-            catch { }
-		}
-		#endregion
-
 		private void button6_Click(object sender, System.EventArgs e)
 		{
 			RefreshDVD();
@@ -2088,25 +1820,14 @@ namespace Utilities.DVDImport
 			if (e.Node.Nodes.Count > 0)
 			{
 				button2.Enabled = false;
-				groupBox2.Enabled = false;
-				button3.Enabled = false;
-				button4.Enabled = false;
-				button5.Enabled = false;
 			}
 			else
 			{
-                try
-                {
-                    if (m_ds == null)
-                        button3.Enabled = true;
-                }
-                catch { }
 				// don't allow PGCs with no audio to be imported
 				if (e.Node.Tag.GetType() == typeof(IFOParse.ProgramChain) && ((IFOParse.ProgramChain)e.Node.Tag).Title.AudioFormat.Count == 0)
 					button2.Enabled = false;
 				else
 					button2.Enabled = true;
-				groupBox2.Enabled = true;
 
 				if (e.Node.Parent == null)
 				{
